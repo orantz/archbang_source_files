@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Locale
+echo "en_GB.UTF-8 UTF-8" > /etc/locale.gen
+
+# & Locale.conf
+echo "en_GB.UTF-8 UTF-8" > /etc/locale.conf
+echo "LC_COLLATE=C" >> /etc/locale.conf
+
+# Keyboard layout
+setxkbmap gb
+
+# Uk Mirror backup first
+list=/etc/pacman.d/mirrorlist
+cp ${list} ${list}.backup
+echo "Server = http://mirror.bytemark.co.uk/archlinux/\$repo/os/\$arch" > ${list}
+echo "Server = http://mirror.cinosure.com/archlinux/$repo/os/\$arch" >> ${list}
+echo "Server = http://mirror.lividpenguin.com/pub/archlinux/\$repo/os/\$arch" >> ${list}
+echo "Server = http://www.mirrorservice.org/sites/ftp.archlinux.org/\$repo/os/\$arch" >> ${list}
+echo "Server = http://archlinux.mirrors.uk2.net/\$repo/os/\$arch" >> ${list}
+
+# Update
+pacman -Syyu
+
+

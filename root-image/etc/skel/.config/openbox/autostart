@@ -1,0 +1,12 @@
+(sleep 3 && /usr/bin/nm-applet --sm-disable) &
+tint2 &
+volumeicon &
+hsetroot -fill /usr/share/wallpapers/manjaro.jpg &
+parcellite &
+
+# Enable as required
+#compton -cCGb &
+#xbacklight -set 100 &
+#/usr/bin/synclient TouchpadOff=1 &
+#xxkb &
+#spacefm -d &

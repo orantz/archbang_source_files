@@ -1,0 +1,32 @@
+Welcome to ArchBang Live Iso
+
+If you are reading this it is likely you do not have a working network connection.
+
+Right click on network icon on panel [below right] and select 'Edit Connections'
+
+If you want to use pacman package manager you need to edit mirrorlist
+
+Open a terminal (Super+t or select from main menu)
+
+sudo medit /etc/pacman.d/mirrorlist
+
+Remove unwanted mirrors, leaving only those nearest to your location
+
+Then run
+
+sudo pacman -Syyu
+
+To install flash then use
+
+sudo pacman -S flashplugin
+
+Or a video player
+
+sudo pacman -S gnome-mplayer
+
+
+
+
+
+
+

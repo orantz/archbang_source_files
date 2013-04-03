@@ -1,0 +1,87 @@
+#---------------------------------------------
+# TINT CONFIG FILE
+#---------------------------------------------
+
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------
+rounded = 0
+border_width = 0
+background_color = #000000 5
+border_color = #212121 0
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+panel_monitor = 1
+panel_position = bottom center
+panel_size = 100% 25
+wm_menu = 1
+panel_margin = 0 0
+panel_padding = 0 0
+font_shadow = 0
+panel_background_id = 1
+panel_layer = top
+strut_policy = follow_size
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+taskbar_mode = single_desktop
+taskbar_padding = 3 3
+taskbar_background_id = 1
+
+#---------------------------------------------
+# TASKS
+#---------------------------------------------
+task_icon = 1
+task_text = 1
+task_width = 270
+task_centered = 1
+task_padding = 6 3
+task_font = sans 8
+task_font_color = #999999 80
+task_active_font_color = #518F2B 100
+task_background_id = 0
+task_active_background_id = 0
+
+#---------------------------------------------
+# SYSTRAY
+#---------------------------------------------
+systray = 1
+systray_padding =  5 4
+systray_background_id = 1
+systray_icon_size = 0
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = %a %d %b %H:%M
+time1_font = Sans 8
+#time2_format = %A %d %B
+#time2_font = Segoe UI 7
+clock_font_color = #999999 100
+clock_padding = 6 0
+clock_background_id = 1
+clock_rclick_command = gsimplecal
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = close
+mouse_right = iconify
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
+
+#---------------------------------------------
+# BATTERY
+#---------------------------------------------
+battery = 1
+battery_hide = 98
+battery_low_status = 10
+battery_low_cmd = notify-send "battery low"
+bat1_font = sans 7
+bat2_font = sans 6
+battery_font_color = #999999 76
+battery_padding = 1 0
+battery_background_id = 0
+

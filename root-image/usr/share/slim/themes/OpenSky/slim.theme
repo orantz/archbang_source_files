@@ -1,0 +1,32 @@
+# "OpenSky" theme for SLim
+# by Conker1r
+# Based on text04 theme for SLiM
+# by Johannes Winkelmann
+
+# Messages (ie: shutdown)
+msg_color               #000000
+msg_font                Verdana:size=18:bold:dpi=75
+msg_x                   50%
+msg_y                   40%
+msg_shadow_color #FFFFFF
+msg_shadow_xoffset 1
+msg_shadow_yoffset 1
+
+# valid values: stretch, tile
+background_style        stretch
+background_color        #000000
+
+# Input controls
+input_panel_x           50%
+input_panel_y           65%
+input_name_x            37
+input_name_y            102
+input_pass_x		-1
+iputt_pass_y		-1
+input_font          	Verdana:size=18:dpi=75
+input_fgcolor           #000000
+
+# Username / password request
+username_font          	Verdana:size=14:bold:dpi=75
+username_color        	#000000
+
